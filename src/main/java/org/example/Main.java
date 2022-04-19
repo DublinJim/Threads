@@ -13,6 +13,8 @@ public class Main {
     MyTask mayTask = new MyTask();
     scheduledExecutorService.scheduleAtFixedRate(mayTask, 1, 3, TimeUnit.SECONDS);
 
-    // scheduledExecutorService.shutdown();
+    scheduledExecutorService.shutdown();
+
+    System.out.println("Ended");
   } // main area
 }
